@@ -3,10 +3,10 @@ package annotations;
 @JsonSerializable
 public class Person {
 
-    @JsonElement
+    @JsonElement(key = "personFirstName")
     private String firstName;
 
-    @JsonElement
+    @JsonElement(key = "personLastName")
     private String lastName;
 
     @JsonElement(key = "personAge")

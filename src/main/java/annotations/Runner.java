@@ -11,9 +11,9 @@ public class Runner {
 		pa.setAge("5");
 
 		try {
-			o2jc.apply(pa);
-			System.out.println(pa.getFirstName());
-			System.out.println(pa.getLastName());
+			String s = o2jc.apply(pa);
+			System.out.println(s);
+			//System.out.println(pa.getLastName());
 		} catch (JsonSerializationException e) {
 			System.err.println("ERRORE");
 			System.err.println(pa.getFirstName());
